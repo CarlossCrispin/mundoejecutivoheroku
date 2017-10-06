@@ -1,0 +1,23 @@
+{
+  "name": "mundoEjecutivo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "CarlossCrispin <carlos.crispin.cc@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/CarlossCrispin/MundoEjecutivoSQL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "dynatable": "^0.3.1",
+    "bootstrap-sweetalert": "^1.0.1",
+    "chart.js": "^2.7.0",
+    "highcharts": "^5.0.14"
+  }
+}

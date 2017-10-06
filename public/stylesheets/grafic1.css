@@ -1,0 +1,11 @@
+body { background-color: #3f3e3b; color: #FFFFFF; }
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}	
+#container {
+	min-width: 310px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto
+}

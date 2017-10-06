@@ -1,0 +1,53 @@
+extends ../templates/default
+
+block content
+    section#about
+        .container
+            .row
+                .col-md-8.col-md-offset-2
+                    h2.title.text-center Gráfica 
+                    br
+                    hr.light
+    .container
+        p 
+        p
+        div(class='col-md-8 col-md-offset-5')
+            table
+                thead()
+                    tr
+                        td  
+                            #bot(onclick="location.href='/users/panel'", ) Regresar
+        br
+    .container
+        p
+        p
+    .container
+        div(class='col-md-10 col-md-offset-5')  
+            h1  Sectores
+            br
+            br    
+    script(src='../javascripts/grafic1.js')
+    #container
+    br
+    div(class='col-md-6 col-md-offset-3')
+        table#datatable.table.table-striped 
+            thead
+                th Empresa
+                th Rank 2015
+                th Rank 2014
+                th Var.Pos 2014/2015
+                
+            tbody
+                each item, i in items
+                    tr
+                        td= item.Empresa
+                        td=item.Rank_1000_2015_id
+                        td=item.Rank_1000_2014
+                        td= item.Var_Pos_2014_2015
+    br
+    br
+    
+     
+
+   
+    script(src='../javascripts/table.js') 

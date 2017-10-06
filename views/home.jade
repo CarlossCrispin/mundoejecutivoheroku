@@ -1,0 +1,61 @@
+extends templates/default
+link(rel='stylesheet', href='/stylesheets/home.css')
+
+block content
+  
+  div(class='col-md-6 col-md-offset-3')
+
+   
+    if message.length > 0
+      -if(message[0] =="successful")
+        script(src='../javascripts/correcto.js')
+      -if(message[0] =="DidNotMatch")
+        script(src='../javascripts/noCoincide.js')
+      -if(message[0] =="duplicity")
+        script(src='../javascripts/doble.js')
+
+      
+        //div(class='alert sweetalert-success' role='alert')= message
+          
+        //- if message1.length > 0
+        //-   script(src='../javascripts/correcto.js')
+        //-   //div(class='alert sweetalert-success' role='alert')= message
+          
+        //- if message2.length > 0
+        //-   script(src='../javascripts/correcto.js')
+        //-   //div(class='alert sweetalert-success' role='alert')= message
+      
+    if authmessage.length > 0
+      script(src='../javascripts/error.js')
+      //div(class='alert alert-danger' role='alert')= authmessage   
+  
+  section#about
+    .container
+      .row
+        .col-md-8.col-md-offset-2
+          h2.title.text-center CUMBRE 1000 EMPRESAS MÁS IMPORTANTES !
+          hr.light
+          p
+            | Grupo Mundo Ejecutivo comparte con usted la realización de la 3ª CUMBRE DE 
+            |LAS 1000 EMPRESAS MÁS IMPORTANTES DE MÉXICO. El evento es privado y por 
+            |invitación para los Presidentes y Directores generales del ranking económico 
+            |más relevante de nuestro país, ya que las empresas listadas representan el 
+            |65% del PIB, y sus activos sumados alcanzan 30 billones 3444 mil millones de 
+            |dólares. Al evento asisten representantes de los 14 sectores económicos 
+            |estratégicos que generan el 40% de las remuneraciones totales del sector 
+            |laboral formal de México.
+
+  include templates/tails
+  include templates/tails1
+  //include templates/backVid
+ 
+  include templates/video
+  include templates/carousel
+  
+
+    
+                        
+
+
+                  
+

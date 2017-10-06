@@ -1,0 +1,61 @@
+extends ../templates/default
+
+block content
+    
+    .container-2
+        #page-wrapper
+            .row
+                .col-lg-2.col-sm-6
+                    .circle-tile
+                        a(href='/users/showTable')
+                            .circle-tile-heading.dark-blue
+                                i.fa.fa-bars.fa-fw.fa-3x
+                        .circle-tile-content.dark-blue
+                            .circle-tile-description.text-faded
+                                | Tablas
+                            .circle-tile-number.text-faded
+                                | Tablas
+                                span#sparklineA
+                            a.circle-tile-footer(href='#')
+                                | las 100 Empresas de méxico 
+                                i.fa.fa-chevron-circle-right
+                .col-lg-2.col-sm-6
+                    .circle-tile
+                        a(href='/users/jobGraph')
+                            .circle-tile-heading.green
+                                i.fa.fa-bar-chart-o.fa-fw.fa-3x
+                        .circle-tile-content.green
+                            .circle-tile-description.text-faded
+                                | Ranking de 
+                            .circle-tile-number.text-faded
+                                | Trabajo
+                            a.circle-tile-footer(href='#')
+                                | Empresas que generan empleo 
+                                i.fa.fa-chevron-circle-right
+                .col-lg-2.col-sm-6
+                    .circle-tile
+                        a(href='/users/incomeGraph')
+                            .circle-tile-heading.orange
+                                i.fa.fa-bar-chart-o.fa-fw.fa-3x
+                        .circle-tile-content.orange
+                            .circle-tile-description.text-faded
+                                | Porduccion de 
+                            .circle-tile-number.text-faded
+                                | Ingresos
+                            a.circle-tile-footer(href='#')
+                                | Ingresos de las 1000 Empresas
+                                i.fa.fa-chevron-circle-right
+                .col-lg-2.col-sm-6
+                    .circle-tile
+                        a(href='/users/sectorGraph')
+                            .circle-tile-heading.DodgerBlue
+                                i.fa.fa-bar-chart-o.fa-fw.fa-3x
+                        .circle-tile-content.DodgerBlue
+                            .circle-tile-description.text-faded
+                                | Top 10
+                            .circle-tile-number.text-faded
+                                | Rentabilidad
+                            a.circle-tile-footer(href='#')
+                                | Empresas mas rentables 
+                                i.fa.fa-chevron-circle-right
+    

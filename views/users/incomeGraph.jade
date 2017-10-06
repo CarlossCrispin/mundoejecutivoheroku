@@ -1,0 +1,49 @@
+extends ../templates/default
+include ../templates/nav
+block content
+    section#about
+        .container
+            .row
+                .col-md-8.col-md-offset-2
+                    h2.title.text-center Gráfica 
+                    br
+                    hr.light
+    .container
+        p 
+        p
+        div(class='col-md-8 col-md-offset-5')
+            table
+                thead()
+                    tr
+                        td  
+                            #bot(onclick="location.href='/users/panel'", ) Regresar
+        br
+    .container
+        p
+        p
+    .container
+        div(class='col-md-10 col-md-offset-5')  
+            h1  Ingresos
+            br
+            br    
+    script(src='../javascripts/grafic1.js')
+    #container
+    br
+    div(class='col-md-6 col-md-offset-3')
+        table#datatable.table.table-striped 
+            thead
+                th Empresa
+                th Porcentaje de ingresos 2014-2015
+                
+            tbody
+                each item, i in items
+                    tr
+                        th= item.Empresa
+                        td= item.Var_Porcentaje_Ingresos_2014_2015
+    br
+    br
+    
+     
+
+
+    script(src='../javascripts/table.js') 
