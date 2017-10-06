@@ -23,7 +23,7 @@ module.exports = {
                     var user = {
                         email : req.body.email,
                         nombre : req.body.nombre,
-                        password : req.boy.password,
+                        password : req.body.password
                         //img:src=('../images/per.jpg')
                     };    
                     db.query('INSERT INTO users SET ?', user, function(err, rows, fields){
