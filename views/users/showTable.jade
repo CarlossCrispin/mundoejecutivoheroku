@@ -12,7 +12,7 @@ block content
   .container
     p 
     p
-    div(class='col-md-8 col-md-offset-4')
+    div(class='col-md-12 col-md-offset-3')
       table
         thead()
           tr
@@ -24,8 +24,7 @@ block content
               if !isAuthenticated
                 #bot(onclick="swal('Oops...','No esta Suscrito!','warning')") Imprimir 
             td  
-              #bot(onclick="tableToExcel('local', 'Mundo Ejecutivo')") Exportar 
-                P a Excel 
+              #bot(onclick="tableToExcel('datatable', 'Mundo Ejecutivo')") Exportar a Excel 
   .container
     p
     p
