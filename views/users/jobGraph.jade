@@ -13,7 +13,7 @@ block content
     .container
         p 
         p
-        div(class='col-md-8 col-md-offset-5')
+        div(class='col-md-12 col-md-offset-5')
             table
                 thead()
                     tr
@@ -21,26 +21,30 @@ block content
                             #bot(onclick="location.href='/users/panel'", ) Regresar
         br
     .container
-        p
-        p
-    .container    
+       
+    section#grafic    
         div(class='col-md-10 col-md-offset-4')  
             h1  Ranking de Trabajo
             br
             br
-    script(src='../javascripts/grafic1.js')
-    #container
-    br
-    div(class='col-md-6 col-md-offset-3')
-       table#datatable.table.table-striped 
-            thead
-                th Empresa
-                th Ranking de Empleo
-            tbody
-                each item, i in items
-                    tr
-                        th= item.Empresa
-                        td= item.Rank_Empleo_2015
+        script(src='../javascripts/grafic1.js')
+        #container
+
+        div(class='col-md-6 col-md-offset-3')
+            div(class='table-responsive' )
+                table#datatable.table.table-striped.table-bordered 
+                    thead
+                        tr
+                            th Empresa
+                            th Empleo 2013
+                            th Empleo 2014
+                    tbody
+                        each item, i in items
+                            tr
+                                td= item.Nombre
+                                td= item.Empleo_2013
+                                td= item.Empleo_2014
+                            
     br
     br
     

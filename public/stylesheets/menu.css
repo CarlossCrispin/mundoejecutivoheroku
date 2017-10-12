@@ -37,7 +37,7 @@ body {
     position: absolute;
     width: 80%;
     left: 0;
-    background: #FAF9F9;
+    background: #30F3F3;
     height: 3px;
     transition: 0.3s;
     cursor: pointer;
@@ -49,7 +49,7 @@ body {
     top: 10px;
     position: absolute;
     width: 60%;
-    background: #FDFDFD;
+    background: #30F3F3;
     height: 3px;
     transition: 0.3s;
     cursor: pointer;
@@ -60,7 +60,7 @@ body {
     top: -10px;
     position: absolute;
     width: 130%;
-    background: #F8F6F6;
+    background: #30F3F3;
     height: 3px;
     transition: 0.3s;
     cursor: pointer;
@@ -106,7 +106,7 @@ body {
   }
 #p
 {
-  color: #fff;
+  color: #30F3F3;
     font-size:18px;
 }
 

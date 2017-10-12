@@ -31,7 +31,7 @@ block content
   .container       
   div(class='col-md-12 col-md-offset-0')
     div(class='table-responsive' )  
-      table#datatable.table.table-striped 
+      table#datatable.table.table-striped.table-bordered 
         thead(bgcolor="#34495E")
           //th(COLSPAN=7) Información de los Ranking
           //th(ROWSPAN=1) Empresa
@@ -72,7 +72,15 @@ block content
             tr
               td= item.Rank_1000_2015_id
               td= item.Rank_1000_2014
-              td= item.Var_Pos_2014_2015
+              -if (item.Var_Pos_2014_2015 > 0)
+                td=item.Var_Pos_2014_2015+"   "
+                  i.fa.fa-arrow-up.fa-2x(aria-hidden='true',style="color:#18bd9b")
+              -if (item.Var_Pos_2014_2015 == 0)
+                td=item.Var_Pos_2014_2015+"   "
+                  i.fa.fa-arrow-right.fa-2x(aria-hidden='true',style="color:#F7DC6F")
+              -if (item.Var_Pos_2014_2015 < 0)
+                td=item.Var_Pos_2014_2015+"   "
+                  i.fa.fa-arrow-down.fa-2x(aria-hidden='true',style="color:#E74C3C")
               td= item.Rank_Sector_2015
               td= item.Rank_Empleo_2015
               td= item.Rank_Rentabilidad

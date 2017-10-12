@@ -19,6 +19,7 @@ body {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    text-align: center;
   }
   
   td {
@@ -29,6 +30,7 @@ body {
   th, td {
     min-width: 120px;
     padding: 10px 20px;
+    text-align: center;
   }
   
   th.active {
