@@ -19,6 +19,9 @@ block content
                     tr
                         td  
                             #bot(onclick="location.href='/users/panel'", ) Regresar
+                        td
+                            #bot(onclick='location.reload();') Actualizar 
+
         br
     .container
        
@@ -35,9 +38,9 @@ block content
                 table#datatable.table.table-striped.table-bordered 
                     thead
                         tr
-                            th Empresa
-                            th Empleo 2013
-                            th Empleo 2014
+                            th(style="text-align: center;") Empresa
+                            th(style="text-align: center;") Empleo 2013
+                            th(style="text-align: center;") Empleo 2014
                     tbody
                         each item, i in items
                             tr

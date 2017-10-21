@@ -48,7 +48,7 @@
 .tiles .tile .tile-caption header {
   height: 40px;
   line-height: 40px;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #18bd9b;
 }
 .tiles .tile .tile-caption .tile-arrow-up {
   float: right;
@@ -88,23 +88,23 @@
   display: inline-block;
 }
 .bg-blue {
-  background: #428bca;
+  background: #ec7063;
   color: #fff;
 }
 .bg-light-blue {
-  background: #5bc0de;
+  background: #B0C4DE;
   color: #fff;
 }
 .bg-green {
-  background: #5cb85c;
+  background: #778899;
   color: #fff;
 }
 .bg-orange {
-  background: #f0ad4e;
+  background: #5499c7;
   color: #fff;
 }
 .bg-red {
-  background: #d9534f;
+  background: #18bd9b;
   color: #fff;
 }
 .bg-image {

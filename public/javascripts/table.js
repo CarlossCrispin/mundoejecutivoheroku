@@ -9,6 +9,7 @@ $(document).ready( function() {
 		  search: true,
 		  recordCount: false,
 		  perPageSelect: true
-		}
+		},
+		
 	  });    	
 });

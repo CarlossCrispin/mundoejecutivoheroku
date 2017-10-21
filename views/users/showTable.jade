@@ -28,11 +28,11 @@ block content
   .container
     p
     p
-  .container       
+  #container       
   div(class='col-md-12 col-md-offset-0')
     div(class='table-responsive' )  
       table#datatable.table.table-striped.table-bordered 
-        thead(bgcolor="#34495E")
+        thead
           //th(COLSPAN=7) Información de los Ranking
           //th(ROWSPAN=1) Empresa
           //th(COLSPAN=10 ) Información Financiera (en millones de dólares)
@@ -65,7 +65,7 @@ block content
             th Sector
           //each item, i in items2
             th=item.Field
-        tbody(bgcolor="#8D9EAF")
+        tbody
           each item, i in items2
             td
           each item, i in items
@@ -115,5 +115,5 @@ block content
                 button.slide Slide
                 button.offset Offset
 
-      script(src='../javascripts/table.js') 
-      script(src='../javascripts/excel.js')
+  script(src='../javascripts/table.js') 
+  script(src='../javascripts/excel.js')

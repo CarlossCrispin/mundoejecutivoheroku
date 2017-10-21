@@ -91,7 +91,7 @@ module.exports = {
        db.connect();
        db.query('select * from ranking_2016_2',function(err,rows,fields){
             if(err) throw err;
-            db.query('DESCRIBE `ranking_2016`',function(err,rows2,fields){
+            db.query('DESCRIBE `ranking_2016_2`',function(err,rows2,fields){
                 if(err) throw err;
             db.end();
 
@@ -121,7 +121,7 @@ module.exports = {
        console.log(`> BD: ${db}`);
        
        db.connect();
-       db.query('select * from empleo',function(err,rows,fields){
+       db.query('select * from empleo where Empleo_2013 != 0',function(err,rows,fields){
             if(err) throw err;
             db.query('DESCRIBE `empleo`',function(err,rows2,fields){
                 if(err) throw err;

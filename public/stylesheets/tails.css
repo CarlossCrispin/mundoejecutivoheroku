@@ -20,5 +20,7 @@
 
 .tile:hover {
   background-color: transparent;
-  color: black;
+  color: #18bd9b;
+  font-family: 'Open Sans', sans-serif, arial;
+  font-size: 20px;
 }

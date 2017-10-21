@@ -1369,6 +1369,7 @@
           if (settings.inputs.paginationNext && i === pages) {
             var nextLi = obj.paginationLinks.buildLink(page + 1, settings.inputs.paginationNext, pageLinkClass + ' ' + settings.inputs.paginationNextClass, page === pages, disabledPageClass);
             li += nextLi;
+            
           }
 
           pageLinks += li;

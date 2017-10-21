@@ -10,7 +10,7 @@ header#mainHeading
             // Brand and toggle get grouped for better mobile display
             .navbar-header.page-scroll
               button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1')
-                span.sr-only Toggle navigation
+                span.sr-only 
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
@@ -22,7 +22,8 @@ header#mainHeading
                 li.hidden
                   a.page-scroll(href='#page-top')    
                 li  
-                  a.page-scroll.i.fa.fa-home(href='/')=" Inicio"
+                  a.page-scroll(href='/') Inicio
+                    i.fa.fa-home
                     
                 if !isAuthenticated
                   li
@@ -31,7 +32,7 @@ header#mainHeading
                     a.page-scroll.button#myBtn1.btn-link  Iniciar Sesión
                 if isAuthenticated
                   li
-                    a.page-scroll(href='#portfolio')='Bienvenido..' +user.nombre  
+                    a.page-scroll(href='')='Bienvenido..' +user.nombre  
                   li
                     a.page-scroll(href='/users/panel') Perfil
                   li

@@ -1,8 +1,25 @@
-section#video
-      .container
-            .row
-                  .col-md-8.col-md-offset-2
-                        h2.title.text-center  Cumbre 1000 Empresas 
-                        hr
-      .embed-responsive.embed-responsive-16by9
-            iframe.embed-responsive-item(src='https://player.vimeo.com/video/236245740?autoplay=1&loop=1&color=ffffff', width='640', height='360', frameborder='0', webkitallowfullscreen='', mozallowfullscreen='', allowfullscreen='')   
+
+link(rel='stylesheet prefetch', href='https://unpkg.com/video.js@5.15.1/dist/video-js.min.css')
+link(rel='stylesheet prefetch', href='https://unpkg.com/videojs-playlist-ui@3.0.0/dist/videojs-playlist-ui.vertical.css')
+link(rel='stylesheet prefetch', href='https://cdnjs.cloudflare.com/ajax/libs/tachyons/4.5.2/tachyons.min.css')
+
+
+section.main-preview-player.bg-black.flex.flex-wrap.flex-row-l.sans-serif
+      .primary-video.relative.flex-auto.w-100.w-70-l
+            video#video-js-player.video-js.vjs-fluid.vjs-default-skin.vjs-big-play-centered(controls='', preload='auto', crossorigin='anonymous', data-setup='{"techOrder": ["youtube", "html5"]}')
+                  p.vjs-no-js
+            .pa3.white
+                  h1.mv0.sans-serif.fw1.tc(data-video-js-title='')  
+                  p(data-video-js-description='')  
+      .playlist-container.w-100.w-30-l.relative
+            p.dn-l.ma3.gray.bg-black.ttu Lista →
+            .vjs-playlist.absolute-l.absolute--fill.ma0.overflow-x-hidden-l.overflow-y-hidden.overflow-y-scroll-l
+                  ol.vjs-playlist-item-list.flex.flex-row.flex-column-l
+                        li.dn.db-l.tc.pa3.bg-black Lista ↓
+
+script(src='https://unpkg.com/video.js@5.15.1/dist/video.min.js')
+script(src='https://unpkg.com/videojs-youtube@2.2.0/dist/Youtube.js')
+script(src='https://unpkg.com/videojs-playlist@3.0.0/dist/videojs-playlist.js')
+script(src='https://unpkg.com/videojs-playlist-ui@3.0.0/dist/videojs-playlist-ui.js')
+
+script(src='../javascripts/video.js')

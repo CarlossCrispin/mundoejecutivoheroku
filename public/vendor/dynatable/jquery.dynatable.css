@@ -11,12 +11,13 @@
  
 th a {
   color: #fff;
- 
+  text-align: center;
 }
 th a:hover {
   color: #fff;
   text-decoration: underline;
   font-size: 16px;
+  text-align: center;
 }
 .dynatable-search {
   float: right;
