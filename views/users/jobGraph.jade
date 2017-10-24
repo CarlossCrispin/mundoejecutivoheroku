@@ -14,31 +14,24 @@ block content
         p 
         p
         div(class='col-md-12 col-md-offset-5')
-            table
-                thead()
-                    tr
-                        td  
-                            #bot(onclick="location.href='/users/panel'", ) Regresar
-                        td
-                            #bot(onclick='location.reload();') Actualizar 
-
+            #bot(onclick="location.href='/users/panel'", ) Regresar
         br
     .container
        
     section#grafic    
-        div(class='col-md-10 col-md-offset-4')  
+        div(class='col-md-12 col-md-offset-4')  
             h1  Ranking de Trabajo
             br
             br
         script(src='../javascripts/grafic1.js')
         #container
-
+        br
         div(class='col-md-6 col-md-offset-3')
             div(class='table-responsive' )
                 table#datatable.table.table-striped.table-bordered 
                     thead
                         tr
-                            th(style="text-align: center;") Empresa
+                            th(style="text-align: center;") Empresa 
                             th(style="text-align: center;") Empleo 2013
                             th(style="text-align: center;") Empleo 2014
                     tbody
@@ -47,6 +40,9 @@ block content
                                 td= item.Nombre
                                 td= item.Empleo_2013
                                 td= item.Empleo_2014
+        div(class='col-md-3 ')
+            #bot(onclick='location.reload();')="\n\n Graficar" 
+    
                             
     br
     br
