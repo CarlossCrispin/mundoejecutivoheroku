@@ -11,14 +11,6 @@ var config = {
 	password : '',
 	database : 'Mundo'
 };
-
-/*var config = {
-				
-	url :process.env.DB || "jdbc:mysql8//ranking_2016:471672.db4free.net:3307/mundo"
-	
-};
-*/
-module.exports = config;
 var config = {
    host : 'sql10.freesqldatabase.com',
    user : 'sql10200031',
@@ -26,6 +18,21 @@ var config = {
   database : 'sql10200031',
   Port : 3306
 };
+/*var config = {
+				
+	url :process.env.DB || "jdbc:mysql8//ranking_2016:471672.db4free.net:3307/mundo"
+	
+};
+*/
+module.exports = config;
+
+var config = {
+	host : 'sql10.freesqldatabase.com',
+	user : 'sql10201707',
+   password : 'TRAk6zveae',
+   database : 'sql10201707',
+   Port : 3306
+ };
 
 
 module.exports = config;
