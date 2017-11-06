@@ -23,7 +23,7 @@ var config = {
 	url :process.env.DB || "jdbc:mysql8//ranking_2016:471672.db4free.net:3307/mundo"
 	
 };
-*/
+
 module.exports = config;
 
 var config = {
@@ -33,6 +33,21 @@ var config = {
    database : 'sql10201707',
    Port : 3306
  };
+ var
 
 
+ config = {
+  //mn "url": process.env.DB || "mongodb://carlos:crispin@ds131511.mlab.com:31511/mundo" 
+   "url": process.env.DB || "mongodb://127.0.0.1:27017/ranking_2015" 
+   
+};
+*/
+ 
+var config = {
+	host : 'sql10.freesqldatabase.com',
+	user : 'sql10203441',
+   password : 'RyipIG54Eg',
+   database : 'sql10203441',
+   Port : 3306
+ };
 module.exports = config;

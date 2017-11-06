@@ -63,12 +63,11 @@ block content
           //each item, i in items2
             th=item.Field
         tbody
-          each item, i in items2
-            td
+          
           each item, i in items
             tr
-              td= item.Rank_1000_2015_id
-              td= item.Rank_1000_2014
+              td= item.Rank_1000_2015
+              td= item.Rank-1000-2014
               -if (item.Var_Pos_2014_2015 > 0)
                 td=item.Var_Pos_2014_2015+"   "
                   i.fa.fa-arrow-up.fa-2x(aria-hidden='true',style="color:#18bd9b")
